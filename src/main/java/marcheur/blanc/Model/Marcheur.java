@@ -39,11 +39,13 @@ public class Marcheur {
                 return;
             }
         }
+
         if (!ruesPossibles.isEmpty()) {
             Rue rue = ruesPossibles.get(0);
             Lieu voisin = rue.getLieu1().equals(positionActuelle) ? rue.getLieu2() : rue.getLieu1();
+            lieuxVisites.clear();
+            lieuxVisites.add(positionActuelle);
             avancerVers(voisin);
         }
     }
 }
-

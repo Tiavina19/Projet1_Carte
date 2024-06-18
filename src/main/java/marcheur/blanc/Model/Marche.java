@@ -16,6 +16,10 @@ public class Marche {
         parcours.add(lieuDepart);
     }
 
+    public Marche() {
+
+    }
+
     public void ajouterLieu(Lieu lieu) {
         parcours.add(lieu);
     }
